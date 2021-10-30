@@ -18,11 +18,18 @@ class IMC {
 
     public function retornarGrau() {
         $imc = $this->calcularImc();
-        if ($imc < 18.5) return "Abaixo do peso";
-        if ($imc >= 18.5 && $imc <= 24.9) return "Peso normal";
-        if ($imc >= 25.0 && $imc <= 29.9) return "Pré Obesidade";
-        if ($imc >= 30.0 && $imc <= 34.9) return "Obesidade Grau 1";
-        if ($imc >= 35.0 && $imc <= 39.9) return "Obesidade Grau 2";
-        if ($imc > 40) return "Obesidade Grau 3";
+        if ($imc < 18.5) {
+            return "Abaixo do peso";
+        } elseif ($imc >= 18.5 && $imc <= 24.9){
+            return "Peso normal";
+        } elseif ($imc >= 25.0 && $imc <= 29.9){
+            return "Pré Obesidade";
+        } elseif ($imc >= 30.0 && $imc <= 34.9){
+            return "Obesidade Grau 1";
+        } elseif ($imc >= 35.0 && $imc <= 39.9){
+            return "Obesidade Grau 2";
+        } elseif ($imc > 40){
+            return "Obesidade Grau 3";
+        }
     }
 }
