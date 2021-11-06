@@ -1,0 +1,67 @@
+<?php
+
+class Calculadora {
+    public float $numero1;
+    public float $numero2;
+
+    public function __construct(float $numero1, float $numero2){
+        $this->numero1 = $numero1;
+        $this->numero2 = $numero2;
+    }
+
+    public function somar() : float {
+        return $this->numero1 + $this->numero2;
+    }
+    public function subtrair() : float {
+        return $this->numero1 - $this->numero2;
+    }
+    public function multiplicar() : float {
+        return $this->numero1 * $this->numero2;
+    }
+    public function dividir() : float {
+        return round($this->numero1 / $this->numero2, 2);
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+<?php
+<<<<<<< HEAD
+
+require_once('Calculadora.php');
+
+$php = new Calculadora(5, 4.8);
+echo ($php->somar());
+echo '<br>' . ($php->subtrair());
+echo '<br>' . ($php->multiplicar());
+echo '<br>' . ($php->dividir());
+=======
+require_once('Calculadora.php');
+
+$conta = 1+2;
+$conta = 1+4;
+$conta = $conta+6;
+$conta = $conta-1;
+$conta = $conta*6;
+
+$conta = new Calculadora();
+
+$valorInicial = $conta->somar(1,1);
+echo '<br>';
+print_r($conta->somar(1,1));
+echo '<br>';
+print_r($conta->somar($valorInicial, $valorInicial));
+echo '<br>';
+print_r($conta->subtrair($valorInicial,1));
+echo '<br>';
+print_r($conta->multiplicar($valorInicial, 10));
+print_r($conta->dividir($valorInicial,  2));
+>>>>>>> 204a5e71a35f0017e24544c2ee20fd1a0c2825b2
